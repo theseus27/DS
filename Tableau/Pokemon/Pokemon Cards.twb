@@ -21,359 +21,6 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='setlist' inline='true' name='federated.1qnxf351ut593919cxit80neasn9' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='setlist' name='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o'>
-            <connection class='semistructpassivestore-direct' directory='C:/Users/Theseus/Documents/DS/Tableau/Pokemon/pokemon-tcg-data-master' filename='setlist.json' password='' server=''>
-              <semistruct-schemas>
-                <semistruct-schema table='[setlist.json]'>
-                  <map key='images' value='true' />
-                  <map key='legalities' value='true' />
-                  <map key='{root}' value='true' />
-                </semistruct-schema>
-              </semistruct-schemas>
-            </connection>
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
-        <cols>
-          <map key='[Document Index (generated)]' value='[setlist.json].[Document Index (generated)]' />
-          <map key='[expanded]' value='[setlist.json].[legalities.expanded]' />
-          <map key='[id]' value='[setlist.json].[id]' />
-          <map key='[logo]' value='[setlist.json].[images.logo]' />
-          <map key='[name]' value='[setlist.json].[name]' />
-          <map key='[printedTotal]' value='[setlist.json].[printedTotal]' />
-          <map key='[ptcgoCode]' value='[setlist.json].[ptcgoCode]' />
-          <map key='[releaseDate]' value='[setlist.json].[releaseDate]' />
-          <map key='[series]' value='[setlist.json].[series]' />
-          <map key='[standard]' value='[setlist.json].[legalities.standard]' />
-          <map key='[symbol]' value='[setlist.json].[images.symbol]' />
-          <map key='[total]' value='[setlist.json].[total]' />
-          <map key='[unlimited]' value='[setlist.json].[legalities.unlimited]' />
-          <map key='[updatedAt]' value='[setlist.json].[updatedAt]' />
-        </cols>
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Document Index (generated)</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Document Index (generated)]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>Document Index (generated)</remote-alias>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>id</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[id]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>id</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>images.logo</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[logo]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>images.logo</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>images.symbol</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[symbol]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>images.symbol</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>legalities.expanded</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[expanded]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>legalities.expanded</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>legalities.standard</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[standard]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>legalities.standard</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>legalities.unlimited</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[unlimited]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>legalities.unlimited</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[name]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>name</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>printedTotal</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[printedTotal]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>printedTotal</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>ptcgoCode</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[ptcgoCode]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>ptcgoCode</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>releaseDate</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[releaseDate]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>releaseDate</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>series</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[series]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>series</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>total</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[total]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>total</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>updatedAt</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[updatedAt]</local-name>
-            <parent-name>[setlist.json]</parent-name>
-            <remote-alias>updatedAt</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
-        <desc>
-          <formatted-text>
-            <run>Document Index (generated)</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='setlist.json' datatype='table' name='[__tableau_internal_object_id__].[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]' role='measure' type='quantitative' />
-      <column caption='Expanded' datatype='string' name='[expanded]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>legalities.expanded</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>id</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Logo' datatype='string' name='[logo]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>images.logo</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>name</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Printed Total' datatype='real' name='[printedTotal]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>printedTotal</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Ptcgo Code' datatype='string' name='[ptcgoCode]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>ptcgoCode</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Release Date' datatype='string' name='[releaseDate]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>releaseDate</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Series' datatype='string' name='[series]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>series</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Standard' datatype='string' name='[standard]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>legalities.standard</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>images.symbol</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Total' datatype='real' name='[total]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>total</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Unlimited' datatype='string' name='[unlimited]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>legalities.unlimited</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Updated At' datatype='string' name='[updatedAt]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>updatedAt</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <_.fcp.SchemaViewerObjectModel.false...folder name='Images' role='dimensions'>
-        <folder-item name='[logo]' type='field' />
-        <folder-item name='[symbol]' type='field' />
-      </_.fcp.SchemaViewerObjectModel.false...folder>
-      <_.fcp.SchemaViewerObjectModel.false...folder name='Legalities' role='dimensions'>
-        <folder-item name='[expanded]' type='field' />
-        <folder-item name='[standard]' type='field' />
-        <folder-item name='[unlimited]' type='field' />
-      </_.fcp.SchemaViewerObjectModel.false...folder>
-      <_.fcp.SchemaViewerObjectModel.false...folder name='Setlist' role='dimensions'>
-        <folder-item name='[Document Index (generated)]' type='field' />
-        <folder-item name='[id]' type='field' />
-        <folder-item name='[name]' type='field' />
-        <folder-item name='[ptcgoCode]' type='field' />
-        <folder-item name='[releaseDate]' type='field' />
-        <folder-item name='[series]' type='field' />
-        <folder-item name='[updatedAt]' type='field' />
-      </_.fcp.SchemaViewerObjectModel.false...folder>
-      <_.fcp.SchemaViewerObjectModel.true...folders-common>
-        <folder name='Images'>
-          <folder-item name='[logo]' type='field' />
-          <folder-item name='[symbol]' type='field' />
-        </folder>
-        <folder name='Legalities'>
-          <folder-item name='[expanded]' type='field' />
-          <folder-item name='[standard]' type='field' />
-          <folder-item name='[unlimited]' type='field' />
-        </folder>
-        <folder name='Setlist'>
-          <folder-item name='[Document Index (generated)]' type='field' />
-          <folder-item name='[id]' type='field' />
-          <folder-item name='[name]' type='field' />
-          <folder-item name='[ptcgoCode]' type='field' />
-          <folder-item name='[releaseDate]' type='field' />
-          <folder-item name='[series]' type='field' />
-          <folder-item name='[updatedAt]' type='field' />
-        </folder>
-      </_.fcp.SchemaViewerObjectModel.true...folders-common>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='setlist.json' id='setlist.json_F87122B99E7A49B2AECFB53824F6EFB5'>
-            <properties context=''>
-              <relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='sv1' inline='true' name='federated.1c62wha0jcsweo181wmh01vhrtqw' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1526,6 +1173,359 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='setlist' inline='true' name='federated.1qnxf351ut593919cxit80neasn9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='setlist' name='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Theseus/Documents/DS/Tableau/Pokemon/pokemon-tcg-data-master' filename='setlist.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[setlist.json]'>
+                  <map key='images' value='true' />
+                  <map key='legalities' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[setlist.json].[Document Index (generated)]' />
+          <map key='[expanded]' value='[setlist.json].[legalities.expanded]' />
+          <map key='[id]' value='[setlist.json].[id]' />
+          <map key='[logo]' value='[setlist.json].[images.logo]' />
+          <map key='[name]' value='[setlist.json].[name]' />
+          <map key='[printedTotal]' value='[setlist.json].[printedTotal]' />
+          <map key='[ptcgoCode]' value='[setlist.json].[ptcgoCode]' />
+          <map key='[releaseDate]' value='[setlist.json].[releaseDate]' />
+          <map key='[series]' value='[setlist.json].[series]' />
+          <map key='[standard]' value='[setlist.json].[legalities.standard]' />
+          <map key='[symbol]' value='[setlist.json].[images.symbol]' />
+          <map key='[total]' value='[setlist.json].[total]' />
+          <map key='[unlimited]' value='[setlist.json].[legalities.unlimited]' />
+          <map key='[updatedAt]' value='[setlist.json].[updatedAt]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>images.logo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[logo]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>images.logo</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>images.symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>images.symbol</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legalities.expanded</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[expanded]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>legalities.expanded</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legalities.standard</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[standard]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>legalities.standard</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legalities.unlimited</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[unlimited]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>legalities.unlimited</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>printedTotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[printedTotal]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>printedTotal</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ptcgoCode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ptcgoCode]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>ptcgoCode</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>releaseDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[releaseDate]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>releaseDate</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>series</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[series]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>series</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>total</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updatedAt</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[updatedAt]</local-name>
+            <parent-name>[setlist.json]</parent-name>
+            <remote-alias>updatedAt</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='setlist.json' datatype='table' name='[__tableau_internal_object_id__].[setlist.json_F87122B99E7A49B2AECFB53824F6EFB5]' role='measure' type='quantitative' />
+      <column caption='Expanded' datatype='string' name='[expanded]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>legalities.expanded</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Logo' datatype='string' name='[logo]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>images.logo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Printed Total' datatype='real' name='[printedTotal]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>printedTotal</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ptcgo Code' datatype='string' name='[ptcgoCode]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ptcgoCode</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Release Date' datatype='string' name='[releaseDate]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>releaseDate</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Series' datatype='string' name='[series]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>series</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Standard' datatype='string' name='[standard]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>legalities.standard</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>images.symbol</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total' datatype='real' name='[total]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>total</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Unlimited' datatype='string' name='[unlimited]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>legalities.unlimited</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Updated At' datatype='string' name='[updatedAt]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>updatedAt</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Images' role='dimensions'>
+        <folder-item name='[logo]' type='field' />
+        <folder-item name='[symbol]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Legalities' role='dimensions'>
+        <folder-item name='[expanded]' type='field' />
+        <folder-item name='[standard]' type='field' />
+        <folder-item name='[unlimited]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Setlist' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[id]' type='field' />
+        <folder-item name='[name]' type='field' />
+        <folder-item name='[ptcgoCode]' type='field' />
+        <folder-item name='[releaseDate]' type='field' />
+        <folder-item name='[series]' type='field' />
+        <folder-item name='[updatedAt]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Images'>
+          <folder-item name='[logo]' type='field' />
+          <folder-item name='[symbol]' type='field' />
+        </folder>
+        <folder name='Legalities'>
+          <folder-item name='[expanded]' type='field' />
+          <folder-item name='[standard]' type='field' />
+          <folder-item name='[unlimited]' type='field' />
+        </folder>
+        <folder name='Setlist'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[id]' type='field' />
+          <folder-item name='[name]' type='field' />
+          <folder-item name='[ptcgoCode]' type='field' />
+          <folder-item name='[releaseDate]' type='field' />
+          <folder-item name='[series]' type='field' />
+          <folder-item name='[updatedAt]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='setlist.json' id='setlist.json_F87122B99E7A49B2AECFB53824F6EFB5'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.0hk7xsq1fazlxh17ehypt0c7j74o' name='setlist.json' table='[setlist.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
   </datasources>
   <worksheets>
     <worksheet name='Sheet 1'>
@@ -1549,7 +1549,7 @@
       <simple-id uuid='{AD030C31-C6F9-4298-9D34-348E360986A8}' />
     </worksheet>
   </worksheets>
-  <windows source-height='30'>
+  <windows source-height='48'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
