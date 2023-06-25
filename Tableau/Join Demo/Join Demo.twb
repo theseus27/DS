@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (samplepokemonjoin)' inline='true' name='federated.15hfztl0iui36s1dr8lof0ihix8e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='samplepokemonjoin' name='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Theseus/Documents/DS/Tableau/Join Demo/samplepokemonjoin.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='SPLIT([Sheet1].[Types], &apos;,&apos;, 1)' />
+              <expression op='[Sheet3].[Type]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[Sheet1].[PokedexNumber]' />
+                <expression op='[Sheet2].[PokedexNumber]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet1' table='[Sheet1$]' type='table'>
+              <columns gridOrigin='A1:D7:no:A1:D7:0' header='yes' outcome='6'>
+                <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                <column datatype='string' name='Name' ordinal='1' />
+                <column datatype='string' name='Types' ordinal='2' />
+                <column datatype='string' name='EvolvesFrom' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet2' table='[Sheet2$]' type='table'>
+              <columns gridOrigin='A1:B7:no:A1:B7:0' header='yes' outcome='6'>
+                <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                <column datatype='string' name='Region' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet3' table='[Sheet3$]' type='table'>
+            <columns gridOrigin='A1:C3:no:A1:C3:0' header='yes' outcome='6'>
+              <column datatype='string' name='Type' ordinal='0' />
+              <column datatype='string' name='Strong Against' ordinal='1' />
+              <column datatype='string' name='Weak Against' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='SPLIT([Sheet1].[Types], &apos;,&apos;, 1)' />
+              <expression op='[Sheet3].[Type]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[Sheet1].[PokedexNumber]' />
+                <expression op='[Sheet2].[PokedexNumber]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet1' table='[Sheet1$]' type='table'>
+              <columns gridOrigin='A1:D7:no:A1:D7:0' header='yes' outcome='6'>
+                <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                <column datatype='string' name='Name' ordinal='1' />
+                <column datatype='string' name='Types' ordinal='2' />
+                <column datatype='string' name='EvolvesFrom' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet2' table='[Sheet2$]' type='table'>
+              <columns gridOrigin='A1:B7:no:A1:B7:0' header='yes' outcome='6'>
+                <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                <column datatype='string' name='Region' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet3' table='[Sheet3$]' type='table'>
+            <columns gridOrigin='A1:C3:no:A1:C3:0' header='yes' outcome='6'>
+              <column datatype='string' name='Type' ordinal='0' />
+              <column datatype='string' name='Strong Against' ordinal='1' />
+              <column datatype='string' name='Weak Against' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[EvolvesFrom]' value='[Sheet1].[EvolvesFrom]' />
+          <map key='[Name]' value='[Sheet1].[Name]' />
+          <map key='[PokedexNumber (Sheet2)]' value='[Sheet2].[PokedexNumber]' />
+          <map key='[PokedexNumber]' value='[Sheet1].[PokedexNumber]' />
+          <map key='[Region]' value='[Sheet2].[Region]' />
+          <map key='[Strong Against]' value='[Sheet3].[Strong Against]' />
+          <map key='[Type]' value='[Sheet3].[Type]' />
+          <map key='[Types]' value='[Sheet1].[Types]' />
+          <map key='[Weak Against]' value='[Sheet3].[Weak Against]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D7:no:A1:D7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B7:no:A1:B7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3:no:A1:C3:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PokedexNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PokedexNumber]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PokedexNumber</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Types</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Types]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Types</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EvolvesFrom</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EvolvesFrom]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EvolvesFrom</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PokedexNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PokedexNumber (Sheet2)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>PokedexNumber</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strong Against</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Strong Against]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Strong Against</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weak Against</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weak Against]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Weak Against</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A2085B4E62174D3F9A6A333D654320D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Evolves From' datatype='string' name='[EvolvesFrom]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[PokedexNumber (Sheet2)]' role='dimension' type='ordinal' />
+      <column caption='Pokedex Number' datatype='integer' name='[PokedexNumber]' role='dimension' type='ordinal' />
+      <column caption='Type1' datatype='string' name='[Types - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.15hfztl0iui36s1dr8lof0ihix8e].[Types]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Types], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Type2' datatype='string' name='[Types - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.15hfztl0iui36s1dr8lof0ihix8e].[Types]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Types], &quot;,&quot;, 2 ) )' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Table1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_A2085B4E62174D3F9A6A333D654320D1]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Table1' id='Sheet1_A2085B4E62174D3F9A6A333D654320D1'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='SPLIT([Sheet1].[Types], &apos;,&apos;, 1)' />
+                    <expression op='[Sheet3].[Type]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[Sheet1].[PokedexNumber]' />
+                      <expression op='[Sheet2].[PokedexNumber]' />
+                    </expression>
+                  </clause>
+                  <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet1' table='[Sheet1$]' type='table'>
+                    <columns gridOrigin='A1:D7:no:A1:D7:0' header='yes' outcome='6'>
+                      <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                      <column datatype='string' name='Name' ordinal='1' />
+                      <column datatype='string' name='Types' ordinal='2' />
+                      <column datatype='string' name='EvolvesFrom' ordinal='3' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet2' table='[Sheet2$]' type='table'>
+                    <columns gridOrigin='A1:B7:no:A1:B7:0' header='yes' outcome='6'>
+                      <column datatype='integer' name='PokedexNumber' ordinal='0' />
+                      <column datatype='string' name='Region' ordinal='1' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='excel-direct.0dabnc10v7uvx218xqzgu0uyg0h3' name='Sheet3' table='[Sheet3$]' type='table'>
+                  <columns gridOrigin='A1:C3:no:A1:C3:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Type' ordinal='0' />
+                    <column datatype='string' name='Strong Against' ordinal='1' />
+                    <column datatype='string' name='Weak Against' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (samplepokemonjoin)' name='federated.15hfztl0iui36s1dr8lof0ihix8e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15hfztl0iui36s1dr8lof0ihix8e'>
+            <column caption='Evolves From' datatype='string' name='[EvolvesFrom]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[EvolvesFrom]' derivation='None' name='[none:EvolvesFrom:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:EvolvesFrom:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:EvolvesFrom:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Name:nk]</rows>
+        <cols>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:EvolvesFrom:nk]</cols>
+      </table>
+      <simple-id uuid='{324871ED-43BE-414F-BE77-23C58B36E96B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:EvolvesFrom:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;Pikachu&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Calculation_387309606127714312:qk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Calculation_387309606127759369:qk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Calculation_387309606127845386:qk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Calculation_387309606127931403:qk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:EvolvesFrom:nk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Name:nk]</field>
+            <field>[federated.15hfztl0iui36s1dr8lof0ihix8e].[none:Strong Against:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{163898E2-DC3E-4387-9713-A8EFBB705442}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='126' name='Sheet 1' width='288'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
