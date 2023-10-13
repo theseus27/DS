@@ -7,7 +7,7 @@ import dotenv
 def connect(dbname):
     dotenv.load_dotenv()
     db = mysql.connector.connect(user='Theseus', password=os.getenv('SQL_PW'),
-                                        host='localhost', database=dbname)
+                                        host='127.0.0.1', database=dbname)
     if not db.is_connected():
         print("Error connecting to SQL")
         return
